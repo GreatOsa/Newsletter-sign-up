@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.view {
+  width: 100vw;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+}
+
+
+
+h1 {
+  color: hsl(234, 29%, 20%);
+  font-size: 2rem;
+
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+
+.mobileImage {
+  width: 100%;
+}
+
+.desktopImage {
+  display: none;
+}
+
+.mobileContainer {
+  padding-top: 1.6rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+
+.list {
+  display: flex;
+
+  gap: 0.2rem;
+}
+
+.list img {
+  width: 1rem;
+}
+
+
+
+
+
+/* email */
+
+.emailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+.button {
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  background: hsl(234, 29%, 20%);
+  padding: 14px 25px;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+}
+
+.input {
+  /* max-width: 190px; */
+  width: 100%;
+  height: 44px;
+  /* background-color: ; */
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 1px solid hsl(231, 7%, 60%);
+  font-size: 1rem;
+  font-weight: bold;
+  color: hsl(231, 7%, 60%);
+  transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.label {
+  display: block;
+  margin-bottom: .3rem;
+  font-size: .9rem;
+  font-weight: bold;
+  color: hsl(234, 29%, 20%);
+  transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+  outline: none;
+  border-color: #05060f;
+}
+
+.input-group:hover .label,
+.input:focus {
+  color: #05060fc2;
+}
+
+
+/* Success Page  */
+.successPage {
+  padding-top: 1.6rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: hsl(234, 29%, 20%);
+}
+
+.successLogo {
+  width: 3.5rem;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+
+.successPage {
+  gap: 1.5rem;
+  margin-top: 30%;
+}
+
+.successInfo {
+  gap: 1rem;
+
+}
+
+.flexSpaceBetween {
+  justify-content: space-between;
+  height: 100vh;
+  padding-bottom: 2.5rem;
+}
+
+/* .successButton {
+  justify-self: baseline
+} */
+
+
+/* destop view */
+
+@media only screen and (min-width: 1000px) {
+  .App {
+    background-color: hsl(234, 29%, 20%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+  }
+
+  .image {
+    /* flex: 100%; */
+    flex: 40%;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-color: rgb(13, 24, 20); */
+    /* background: url("./images/illustration-sign-up-desktop.svg") no-repeat center top; */
+
+    /* z-index: 1; */
+  }
+
+  .mobileContainer {
+    /* width: 100%; */
+    flex: 60%;
+    /* margin-left: 1rem; */
+
+  }
+
+  .desktopImage {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .mobileImage {
+    display: none;
+  }
+
+  .view {
+    padding: 1rem 1rem 1rem 2rem;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* flex-basis: auto; */
+    gap: 2rem;
+    background-color: white;
+
+    width: 45%;
+    height: fit-content;
+    border-radius: 16px;
+  }
+
+  .desktop {
+    height: 100vh;
+    width: 100vw;
+  }
+
+
+
+  .emailContainer {
+    margin-bottom: 0;
+  }
+
+  .successPage {
+    /* padding-top: 1.6rem; */
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: unset;
+  }
+
+}
