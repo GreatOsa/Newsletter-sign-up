@@ -101,6 +101,11 @@ li {
   border: none;
 }
 
+.button:hover {
+  background: linear-gradient(to right, hsla(340, 64%, 71%, 0.904), hsl(4, 100%, 67%));
+
+}
+
 .input {
   /* max-width: 190px; */
   width: 100%;
