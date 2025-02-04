@@ -85,6 +85,9 @@ li {
 }
 
 
+
+
+
 .button {
   width: 100%;
   position: relative;
@@ -112,13 +115,35 @@ li {
   transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
 }
 
-.label {
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+
+}
+
+.label,
+.error {
   display: block;
   margin-bottom: .3rem;
   font-size: .9rem;
   font-weight: bold;
-  color: hsl(234, 29%, 20%);
+
   transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.error {
+  color: hsl(4, 100%, 67%);
+}
+
+.errorInput {
+  border-color: hsl(4, 100%, 67%);
+  background-color: hsl(4, 100%, 67%, .2);
+
+}
+
+.label {
+  color: hsl(234, 29%, 20%);
 }
 
 .input:hover,

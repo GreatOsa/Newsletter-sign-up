@@ -4,7 +4,13 @@ import desktopImage from "../images/illustration-sign-up-desktop.svg";
 import checkLogo from "../images/icon-list.svg";
 import EmailForm from "./EmailForm";
 
-export default function SubscriptionPage({ toggleClick, email, setEmail }) {
+export default function SubscriptionPage({
+  toggleClick,
+  email,
+  setEmail,
+  isError,
+  checkValidEmail,
+}) {
   return (
     <div className="view">
       <div className="image">
@@ -44,6 +50,8 @@ export default function SubscriptionPage({ toggleClick, email, setEmail }) {
           toggleClick={toggleClick}
           email={email}
           setEmail={setEmail}
+          isError={isError}
+          checkValidEmail={checkValidEmail}
         />
       </div>
     </div>
