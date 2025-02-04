@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/GreatOsa/Newsletter-sign-up)
-- Live Site URL: [Add live site URL here](https://greatosa.github.io/Newsletter-sign-up/)
+- Solution URL: [solution URL here](https://github.com/GreatOsa/Newsletter-sign-up)
+- Live Site URL: [live site URL here](https://greatosa.github.io/Newsletter-sign-up/)
 
 ## My process
 
