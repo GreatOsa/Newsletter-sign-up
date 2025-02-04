@@ -14,6 +14,7 @@ function App() {
 
   function toggleClick() {
     setIsClick(!isClick);
+    setEmail("");
   }
   function checkValidEmail() {
     if (!re.test(email)) {
@@ -23,7 +24,7 @@ function App() {
     } else {
       setIsError(false);
       setIsClick(!isClick);
-      setEmail("");
+
       console.log("noooo");
     }
   }

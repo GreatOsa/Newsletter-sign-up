@@ -6,6 +6,7 @@ export default function EmailForm({
   isError,
   checkValidEmail,
 }) {
+  console.log(email);
   return (
     <div className="emailContainer">
       <div className="input-group">
@@ -26,7 +27,6 @@ export default function EmailForm({
             setEmail(e.target.value);
           }}
         />
-        <div></div>
       </div>
       <button className="button" onClick={() => checkValidEmail()}>
         Subscribe to monthly newsletter
